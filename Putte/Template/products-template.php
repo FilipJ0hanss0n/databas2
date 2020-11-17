@@ -42,10 +42,10 @@
 					while($row = $result->fetch_assoc()){
 						echo <<<TR
 						<tr>
-							<td>$row['name']</td>
-							<td>$row['description']</td>
-							<td><img src="$row['picture']" alt="Grönt surt"></td>
-							<td>$row['price']</td>
+							<td>{$row['name']}</td>
+							<td>{$row['description']}</td>
+							<td><img src="{$row['picture']}" alt="{$row['description']}"></td>
+							<td>{$row['price']}</td>
 							<td><a href="#">Köp</a></td>
 						</tr>
 TR;
